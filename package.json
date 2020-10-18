@@ -1,0 +1,14 @@
+{
+  "name": "@samridhivig/introduction-to-d3js",
+  "main": "4765552fd28ce2e6@177.js",
+  "version": "177.0.0",
+  "homepage": "https://observablehq.com/@samridhivig/introduction-to-d3js",
+  "author": {
+    "name": "Samridhi Vig",
+    "url": "https://observablehq.com/@samridhivig"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

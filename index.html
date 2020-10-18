@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Introduction to D3js</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+
+<div class="secondPetalPath"></div>
+<p>Credit: <a href="https://observablehq.com/@samridhivig/introduction-to-d3js">Introduction to D3js</a></p>
+<script type="module">
+
+//import define from "./index.js";
+//import {Runtime, Library, Inspector} from "./runtime.js";
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@samridhivig/introduction-to-d3js.js?v=3";
+/*    
+const runtime = new Runtime();
+//const main = runtime.module(define, Inspector.into(document.body));
+const main = runtime.module(define, name => {
+  if (name === "chart") {
+    return new Inspector(document.body.appendChild(document.createElement("DIV")));
+  }
+  */  
+new Runtime().module(define, Inspector.into("#observablehq"));
+
+</script>
+    </html>

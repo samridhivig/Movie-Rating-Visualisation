@@ -1,2 +1,33 @@
-# Movie-Rating-Visualisation-
-ImDb Movie data visualisation with D3js as flower metafor where number of petals represent number of votes for the movie
+# Introduction to D3js
+
+https://observablehq.com/@samridhivig/introduction-to-d3js@177
+
+View this notebook in your browser by running a web server in this folder. For
+example:
+
+~~~sh
+python -m SimpleHTTPServer
+~~~
+
+Or, use the [Observable Runtime](https://github.com/observablehq/runtime) to
+import this module directly into your application. To npm install:
+
+~~~sh
+npm install @observablehq/runtime@4
+npm install https://api.observablehq.com/d/4765552fd28ce2e6.tgz?v=3
+~~~
+
+Then, import your notebook and the runtime as:
+
+~~~js
+import {Runtime, Inspector} from "@observablehq/runtime";
+import define from "@samridhivig/introduction-to-d3js";
+~~~
+
+To log the value of the cell named “foo”:
+
+~~~js
+const runtime = new Runtime();
+const main = runtime.module(define);
+main.value("foo").then(value => console.log(value));
+~~~
